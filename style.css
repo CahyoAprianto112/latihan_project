@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+/* logo-top */
+#logo1 {
+    width: 52px;
+    height: 52px;
+}
+/* navbar */
+#navbar {
+    background: #f9f9f9;
+}
+/* mengatur ukuran tulisan, ketebalan huruf, warna, text bayangan, dan margin bawah*/
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+/* mengubah warna pada logo travel menjadi kuning */
+#logo span {
+    color: #ffa500;
+}
+/* mengubah warna pada toggler button menjadi kuning */
+.navbar-toggler {
+    color: #ffa500;
+}
+/* memberikan jarak kiri antara logo dan list navbar */
+.navbar-nav {
+    margin-left: 130px;
+}
+
+/* untuk memberi spacing, tebal huruf, warna, transisi pada huruf list navbar  */
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5 ease;
+}
+
+/* membuat background pada list navbar menjadi berwarna ketika diarahkan */
+.nav-item .nav-link:hover {
+    background: #ffa500;
+    color: white;
+}
+/* mengubah warna button search menjadi kuning, warna huruf putih */
+#navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+/* End navbar */
+
+
+/* Home Section */
+/* mengatur tinggi, lebar bg-gambar */
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/img/bg-image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* mengatur tulisan rata tengah dam memberikan jarak  */
+.home .content {
+    text-align: center;
+    padding: 200px;
+}
+
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+/* memberikan text animasi pada visit */
+.changecontent::after {
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+    0%{content: "France";}
+    10%{content: "Chinese";}
+    20%{content: "Italy";}
+    30%{content: "Japan";}
+    40%{content: "Korea";}
+    50%{content: "London";}
+    60%{content: "Turkey";}
+    70%{content: "Pakistan";}
+    80%{content: "Germany";}
+    90%{content: "Spain";}
+    100%{content: "United Kingdom";}
+}
+
+.home .content p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+}
+
+/* memberikan border, bg-warna, jarak, spasi, ketebalan huruf, transisi, dan teks dekorasi none*/
+.home .content a {
+    padding: 10px;
+    background: black;
+    color: #ffa500;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* ketik kursor diarahkan akan berubah bg-warna */
+.home .content a:hover {
+    background: #ffa500;
+    color: white;
+}
+/* End Home */
+
+
+/* Book Section */
+/* membuat jarak pada tulisa book */
+.book {
+     background: #f9f9f9;
+     padding: 80px;
+}
+/* mengatur tulisan rata tengah, teks bayangan, dan ketebalan huruf */
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0pc 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span {
+    color: #ffa500;
+}
+
+/* mengatur card gambar menjadi tumpul dan berbayang*/
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+/* memberikan margin atas pada tulisan book*/
+.book .row {
+    margin-top: 30px;
+}
+
+/* membuat form input bordernya menjadi sedikit tumpul, berbayang, dan tidak bergaris */
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+/* mengatur form textarea memiliki tinggi 200, menjadi sedikit tumpul dan berbayang */
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+/* mengatur tinggi, ukuran huruf, warna dan background, serta margin atas pada tombol submit */
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 170px;
+    color: black;
+}
+/* End Book */
+
+
+/* Section Packages */
+/* Mengatur tulisan Packages rata tengah, mempunyai margin atas, dan ketebalan huruf */
+.main-txt h1 {
+    padding-top: 90px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+/* membuat warna packages menjadi kuning */
+.main-txt h1 span {
+    color: #ffa500;
+}
+
+/* membuat card menjadi sedikit tumpul dan berbayang */
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+/* membuat card-image menjadi sedikit tumpul */
+.packages .card img {
+    border-radius: 10px;
+}
+
+.packages .card .card-body {
+    background: transparent;
+}
+/* mengatur ukuran tulisan dan ketebalan */
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+/* mengatur ukuran huruf */
+.packages .card .card-body p {
+    font-size: 15px;
+}
+
+/* mengubah warna bintang */
+.checked {
+    color: #ffa500;
+}
+
+.star i {
+    font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+    font-size: 20px;
+}
+
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+.packages .card .card-body a:hover {
+    color: black;
+    width: 170px;
+}
+/* End Packages */
+
+
+
+/* Section Services */
+/* mengubah warna background, dan margin atas */
+.services {
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+/* membuat card jadi sedikit berbayang, tidak ada border, cursor berubah menajdi pointer */
+.services .card {
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* mengatur ukuran, rata tengah icon hotel, mengubah warna icon hotel, dan memberikan margin atas pada card */
+.services .card i {
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+/* mengatur ketebalan huruf h3 */
+.services .card .card-body h3 {
+    font-weight: 600;
+}
+
+/* membuat tulisan rata tengah */
+.services .card .card-body {
+    text-align: center;
+}
+/* End Services */
+
+
+/* Section Gallery */
+/* memberikan margin atas */
+.gallery {
+    margin-top: 50px;
+}
+
+/* mengatur card gallery supaya menjadi sedikit tumpul, dan berbayang */
+.gallery .card {
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+/* gambar menjadi sedikit tumpul */
+.gallery .card img {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* ketika kursor diarahkan ke gambar maka dia akan zoom in dan zoom out */
+.gallery .card img:hover {
+    transform: scale(1.1);
+}
+/* End Gallery */
+
+
+
+/* About */
+/* mengatur margin atas dan jarak */
+.about {
+
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+
+/* card menjadi sedikit tumpul */
+.about .card {
+    border-radius: 10px;
+}
+
+/* gambar menjadi sedikit tumpul */
+.about .card img {
+    border-radius: 10px;
+}
+
+/* mengatur ketebalan huruf dan memberikan jarak spasi pada huruf */
+.about h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* mengatur ukuran huruf */
+.about p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* mengatur  lebar, tinggi background, warna, jarak spasi, ketebalan huruf pada button dan border tidak ada */
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/* ketika kursor diarahkan pada button maka lebar akan berubah */
+#about-btn:hover {
+    width: 170px;
+    color: black;
+}
+/* End About */
+
+/* Foooter */
+/* mengatur lebar, margin atas, tulisan rata tengah, dan background */
+#footer {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* mengatur ketebalan huruf, jarak atas, dan teks sedikit berbayang */
+#footer h1 {
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+
+/* memberikan warna pada h1 span */
+#footer h1 span {
+    color: #ffa500;
+}
+
+/* mengatur jarak, ukuran, background, warna, margin bawah dan kiri */
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/* ketika kursor diarahkan ke social media maka akan berubah warna backgroundnya */
+.social-links i:hover {
+    background: #ffa500;
+}
+/* End Foooter */
